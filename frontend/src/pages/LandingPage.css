@@ -1,0 +1,1022 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7fafd;
+}
+
+.lp-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 70px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.lp-logo {
+    display: flex;
+    align-items: center;
+}
+
+.lp-logo-circle {
+    width: 48px;
+    height: 48px;
+    background: #4285f4;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 12px;
+    box-shadow: 0 2px 8px rgba(66, 133, 244, 0.08);
+    letter-spacing: 2px;
+}
+
+.lp-logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.lp-logo-title {
+    color: #2563eb;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.lp-logo-sub {
+    color: #6b7280;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.lp-nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lp-nav-links li a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: color 0.2s;
+}
+
+.lp-nav-links li a:hover {
+    color: #2563eb;
+}
+
+.lp-login-btn {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 22px;
+    padding: 10px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.lp-login-btn:hover {
+    background: #1746a0;
+}
+
+.lp-home-section {
+    min-height: 480px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.lp-home-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(37, 99, 235, 0.10);
+    z-index: 1;
+}
+
+.lp-home-section::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.lp-home-content,
+.lp-home-content-left,
+.lp-home-content-screenshot {
+    position: relative;
+    z-index: 2;
+}
+
+.lp-home-content h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.13);
+}
+
+.lp-home-content p {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+    color: #e3e8f0;
+}
+
+.lp-home-btns {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+
+.lp-home-btns button {
+    background: #fff;
+    color: #2563eb;
+    border: none;
+    border-radius: 22px;
+    padding: 10px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+}
+
+.lp-home-btns button:hover {
+    background: #2563eb;
+    color: #fff;
+}
+
+.lp-about-section {
+    background: #fff;
+    padding: 60px 0 40px 0;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.lp-about-title {
+    color: #2563eb;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+    letter-spacing: 1px;
+}
+
+.lp-about-underline {
+    width: 120px;
+    height: 5px;
+    background: #2563eb;
+    margin: 0 auto 24px auto;
+    border-radius: 3px;
+}
+
+.lp-about-desc {
+    color: #444;
+    font-size: 1.35rem;
+    margin-bottom: 36px;
+}
+
+.lp-about-main-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 72px;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.lp-about-img-col {
+    flex: 1 1 350px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    min-width: 280px;
+    margin-left: -40px;
+    margin-right: 36px;
+}
+
+.lp-about-img {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 8px;
+    background: #d6f0f7;
+    box-shadow: 0 2px 16px rgba(37, 99, 235, 0.08);
+}
+
+.lp-about-content-col {
+    flex: 1 1 520px;
+    min-width: 320px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.lp-about-mission-title,
+.lp-about-values-title {
+    color: #2563eb;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.lp-about-mission-text {
+    color: #222;
+    font-size: 1.08rem;
+    margin-bottom: 0.7em;
+}
+
+.lp-about-values-row {
+    display: flex;
+    gap: 18px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+
+.lp-about-value-card {
+    background: #f1f5fb;
+    border-radius: 12px;
+    padding: 18px 22px;
+    min-width: 180px;
+    flex: 1 1 180px;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+    margin-bottom: 10px;
+}
+
+.lp-about-value-title {
+    color: #2563eb;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+}
+
+.lp-about-value-desc {
+    color: #444;
+    font-size: 1rem;
+}
+
+.lp-specialties-section {
+    background: #f1f5fb;
+    padding: 60px 0 40px 0;
+    text-align: center;
+}
+
+.lp-specialties-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.lp-specialties-list button {
+    background: #fff;
+    color: #2563eb;
+    border: 1px solid #2563eb33;
+    border-radius: 16px;
+    padding: 10px 22px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.06);
+}
+
+.lp-specialties-list button:hover {
+    background: #2563eb;
+    color: #fff;
+}
+
+.lp-doctors-section {
+    background: #fff;
+    padding: 60px 0 40px 0;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.lp-doctors-title {
+    color: #2563eb;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+    letter-spacing: 1px;
+}
+
+.lp-doctors-underline {
+    width: 120px;
+    height: 5px;
+    background: #2563eb;
+    margin: 0 auto 24px auto;
+    border-radius: 3px;
+}
+
+.lp-doctors-desc {
+    color: #444;
+    font-size: 1.25rem;
+    margin-bottom: 36px;
+}
+
+.lp-doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.lp-doctor-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 1px 6px rgba(37, 99, 235, 0.08);
+    padding: 0 0 24px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 420px;
+    border: 1px solid #e5eaf2;
+    transition: box-shadow 0.18s;
+}
+
+.lp-doctor-card:hover {
+    box-shadow: 0 4px 24px rgba(37, 99, 235, 0.13);
+}
+
+.lp-doctor-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    background: #f1f5fb;
+}
+
+.lp-doctor-info {
+    padding: 18px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 1 auto;
+}
+
+.lp-doctor-name {
+    color: #2563eb;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+    margin-top: 0.2em;
+    text-align: left;
+}
+
+.lp-doctor-specialty {
+    color: #444;
+    font-size: 1.08rem;
+    margin-bottom: 0.2em;
+    text-align: left;
+}
+
+.lp-doctor-experience {
+    color: #888;
+    font-size: 1rem;
+    margin-bottom: 1.2em;
+    text-align: left;
+}
+
+.lp-doctor-btn-outline {
+    background: transparent;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 1.08rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.18s, color 0.18s;
+}
+
+.lp-doctor-btn-outline:hover {
+    background: #2563eb;
+    color: #fff;
+}
+
+.lp-contact-section {
+    background: #f7fafd;
+    padding: 60px 0 40px 0;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.lp-contact-title {
+    color: #2563eb;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+    letter-spacing: 1px;
+}
+
+.lp-contact-underline {
+    width: 120px;
+    height: 5px;
+    background: #2563eb;
+    margin: 0 auto 24px auto;
+    border-radius: 3px;
+}
+
+.lp-contact-desc {
+    color: #444;
+    font-size: 1.25rem;
+    margin-bottom: 36px;
+}
+
+.lp-contact-main-row {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.lp-contact-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(37, 99, 235, 0.08);
+    border: 1px solid #e5eaf2;
+    padding: 32px 24px 24px 24px;
+    flex: 1 1 420px;
+    min-width: 320px;
+    max-width: 540px;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.lp-contact-form-card {
+    margin-right: 0;
+}
+
+.lp-contact-info-card {
+    margin-left: 0;
+}
+
+.lp-contact-form-title,
+.lp-contact-info-title {
+    color: #2563eb;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.lp-contact-form-row {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 14px;
+}
+
+.lp-contact-form-group {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.lp-contact-form-group label {
+    color: #444;
+    font-size: 1rem;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.lp-contact-form-group input,
+.lp-contact-form-group textarea {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s;
+    background: #f7fafd;
+}
+
+.lp-contact-form-group input:focus,
+.lp-contact-form-group textarea:focus {
+    border: 1.5px solid #2563eb;
+}
+
+.lp-contact-btn {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background 0.18s;
+}
+
+.lp-contact-btn:hover {
+    background: #1746a0;
+}
+
+.lp-contact-info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 10px;
+}
+
+.lp-contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    font-size: 1.08rem;
+    color: #222;
+}
+
+.lp-contact-info-icon {
+    font-size: 1.5rem;
+    color: #2563eb;
+    margin-top: 2px;
+}
+
+.lp-contact-info-sub {
+    color: #888;
+    font-size: 0.98rem;
+}
+
+@media (max-width: 1100px) {
+    .lp-contact-main-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .lp-contact-card {
+        max-width: 100%;
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+.lp-footer {
+    background: #e3e8f0;
+    padding: 36px 0 0 0;
+    margin-top: 0;
+}
+
+.lp-footer-cols {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding-bottom: 18px;
+}
+
+.lp-footer-cols>div {
+    min-width: 180px;
+}
+
+.lp-footer-cols h4 {
+    margin-bottom: 10px;
+    color: #2563eb;
+    font-size: 1.1rem;
+}
+
+.lp-footer-socials {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 18px;
+    margin-top: 8px;
+}
+
+.lp-footer-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.18s;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.lp-footer-social-link:hover {
+    background: #e3e8f0;
+}
+
+.lp-footer-copy {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.98rem;
+    padding: 12px 0 8px 0;
+    border-top: 1px solid #cbd5e1;
+    margin-top: 12px;
+}
+
+/* Navbar right section */
+.lp-navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.lp-helpline-screenshot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 12px;
+}
+
+.lp-helpline-label-screenshot {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-bottom: 0px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.lp-helpline-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lp-helpline-phone-screenshot {
+    color: #111;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.lp-helpline-icon-screenshot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: none;
+    margin-left: 2px;
+}
+
+.lp-login-btn-screenshot {
+    background: #fff;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+    border-radius: 20px;
+    padding: 7px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s, border 0.18s;
+    outline: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.lp-login-btn-screenshot:hover {
+    background: #2563eb;
+    color: #fff;
+    border: 2px solid #2563eb;
+}
+
+.lp-login-caret {
+    font-size: 0.95em;
+    margin-left: 4px;
+}
+
+@media (max-width: 900px) {
+    .lp-navbar-right {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-end;
+    }
+
+    .lp-helpline-screenshot {
+        align-items: flex-end;
+        margin-right: 0;
+    }
+}
+
+/* Login Dropdown */
+.lp-login-dropdown-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.lp-login-dropdown-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.lp-login-caret {
+    font-size: 0.9em;
+    margin-left: 4px;
+}
+
+.lp-login-dropdown {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    min-width: 170px;
+    z-index: 1000;
+    padding: 8px 0;
+    animation: fadeIn 0.18s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.lp-login-dropdown-item {
+    padding: 10px 18px;
+    cursor: pointer;
+    color: #222;
+    font-size: 1rem;
+    transition: background 0.18s, color 0.18s;
+}
+
+.lp-login-dropdown-item:hover {
+    background: #f1f5fb;
+    color: #2563eb;
+}
+
+/* Home section left alignment and background position */
+.lp-home-section-left {
+    justify-content: flex-start;
+    background-position: center 0px;
+}
+
+.lp-home-content-left {
+    text-align: left;
+    margin-left: 5vw;
+    max-width: 540px;
+}
+
+.lp-home-content-left h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.lp-home-content-left h2 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    color: #fff;
+}
+
+.lp-home-content-left p {
+    color: #e3e8f0;
+    font-size: 1.18rem;
+    margin-bottom: 2.2rem;
+}
+
+@media (max-width: 900px) {
+    .lp-home-section-left {
+        justify-content: center;
+        background-position: center 0px;
+    }
+
+    .lp-home-content-left {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .lp-about-flex,
+    .lp-contact-flex,
+    .lp-footer-cols,
+    .lp-doctors-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lp-navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 12px 10px;
+        gap: 10px;
+    }
+
+    .lp-nav-links {
+        gap: 18px;
+    }
+
+    .lp-doctors-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .lp-doctor-card {
+        min-height: 0;
+    }
+
+    .lp-doctors-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .lp-about-main-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .lp-about-img-col,
+    .lp-about-content-col {
+        justify-content: center;
+        align-items: center;
+        min-width: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .lp-about-content-col {
+        text-align: center;
+    }
+
+    .lp-about-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Home Section Screenshot Styles */
+.lp-home-content-screenshot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 420px;
+    margin-left: 2vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 700px;
+}
+
+.lp-home-title {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0.2em;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+.lp-home-subtitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 1.1em;
+    line-height: 1.1;
+}
+
+.lp-home-desc {
+    color: #e3e8f0;
+    font-size: 1.25rem;
+    margin-bottom: 2.2em;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.lp-home-btns-screenshot {
+    display: flex;
+    gap: 24px;
+}
+
+.lp-home-btn-filled {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 36px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.08);
+}
+
+.lp-home-btn-filled:hover {
+    background: #1746a0;
+}
+
+.lp-home-btn-outline {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 14px 36px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s;
+}
+
+.lp-home-btn-outline:hover {
+    background: #fff;
+    color: #2563eb;
+}
+
+@media (max-width: 900px) {
+    .lp-home-content-screenshot {
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        min-height: 320px;
+    }
+
+    .lp-home-title {
+        font-size: 2.3rem;
+    }
+
+    .lp-home-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .lp-home-btns-screenshot {
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .lp-home-btn-filled,
+    .lp-home-btn-outline {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 1rem;
+    }
+}
+
+/* Specialties Section Heading Styles */
+.lp-specialties-title {
+    color: #2563eb;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+    letter-spacing: 1px;
+}
+
+.lp-specialties-underline {
+    width: 120px;
+    height: 5px;
+    background: #2563eb;
+    margin: 0 auto 24px auto;
+    border-radius: 3px;
+}
+
+.lp-specialties-desc {
+    color: #444;
+    font-size: 1.25rem;
+    margin-bottom: 36px;
+}
